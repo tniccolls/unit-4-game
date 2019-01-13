@@ -8,6 +8,8 @@ wins = 0;
 losses = 0;
 
 function startGame() {
+    points=0;
+    $("#pointSum").text(points);
     targetNumber = Math.floor(Math.random()*101+19);
     // console.log(targetNumber);
     $("#targetScore").text(targetNumber);
@@ -25,10 +27,13 @@ $("#c1").on("click", function() {
     if(points>targetNumber) {
         losses++;
         $("#lossCount").text(losses);
+        $("#victory").text("You Lose!");
         startGame();
     }else if(points === targetNumber) {
         wins++;
         $("#winCount").text(wins);
+        $("#victory").text("You Win!");
+        startGame();
     }
 
 })
@@ -39,10 +44,13 @@ $("#c2").on("click", function() {
     if(points>targetNumber) {
         losses++;
         $("#lossCount").text(losses);
+        $("#victory").text("You Lose!");
         startGame();
     }else if(points === targetNumber) {
         wins++;
         $("#winCount").text(wins);
+        $("#victory").text("You Win!");
+        startGame();
     }
 
 })
@@ -53,11 +61,15 @@ $("#c3").on("click", function() {
     if(points>targetNumber) {
         losses++;
         $("#lossCount").text(losses);
+        $("#victory").text("You Lose!");
         startGame();
     }else if(points === targetNumber) {
         wins++;
         $("#winCount").text(wins);
+        $("#victory").text("You Win!");
+        startGame();
     }
+
 
 })
 
@@ -67,10 +79,13 @@ $("#c4").on("click", function() {
     if(points>targetNumber) {
         losses++;
         $("#lossCount").text(losses);
+        $("#victory").text("You Lose!");
         startGame();
     }else if(points === targetNumber) {
         wins++;
         $("#winCount").text(wins);
+        $("#victory").text("You Win!");
+        startGame();
     }
 
 })
