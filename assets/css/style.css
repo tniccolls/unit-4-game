@@ -1,4 +1,52 @@
+#gameTitle {
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+}
+
+
+#instructions {
+    background-color: beige;
+    color: green; 
+}
+
 .crystalPic {
     width: 150px;
     height: 150px;
+    margin-bottom: 50px;
+    margin-top: -130px;
+}
+
+.wall{
+    border-style: solid;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+#target {
+    font-size: 26;
+    max-width: 270px;
+    color: purple;
+    background-color: lightgreen;
+    height: 150px;
+}
+#win-loss {
+    max-width: 200px;
+    background-color: cyan;
+    position: relative;
+    height: 150px;
+    bottom: 170px;
+    left: 300px;
+
+}
+
+#background{
+    background-image: url("../images/background2.jpg")
+}
+
+.scoreCount{
+    background-color: teal;
+    color: white;
+    max-width: 450px;
+    /* margin-bottom: 30px; */
 }
